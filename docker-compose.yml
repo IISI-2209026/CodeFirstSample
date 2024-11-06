@@ -11,3 +11,8 @@ services:
       - "5432:5432"
     volumes:
       - ./data:/var/lib/postgresql/data
+  startconsole:
+    image: startconsole
+    build:
+      context: .
+      dockerfile: StartConsole/Dockerfile

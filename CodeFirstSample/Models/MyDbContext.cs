@@ -15,6 +15,7 @@ public class MyDbContext : DbContext
         
         
         // DbContext 自動 Migration 的策略與邏輯
+        // 需要依照情境做調整
         if (!s_migrated[0])
         {
             lock (s_migrated)
